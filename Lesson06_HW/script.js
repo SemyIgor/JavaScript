@@ -1,12 +1,23 @@
+task01();
+// task02();
+// task03();
+// task04();
+
 // ====================================================================
 function task01() {
 	/*    Задание 1
 Создайте функцию которая возводит переданное число в куб, 
 необходимо вывести в консоль результат 2^3 степени + 3 ^ 3 степени. 
 */
+	const firstNumber = 2;
+	const secondNumber = 3;
 
 	const cube = (numberToCube) => Math.pow(numberToCube, 3);
-	console.log(cube(2) + cube(3));
+	console.log(
+		`${firstNumber}^3 + ${secondNumber}^3 = ${
+			cube(firstNumber) + cube(secondNumber)
+		}`
+	);
 }
 // --------------------------------------------------------------------
 
@@ -52,7 +63,7 @@ function task03() {
 	}
 
 	console.log(
-		`Максимальное число из трёх введённых равно ${findMaxNumber(
+		`Максимальное число из ${firstNumber}, ${secondNumber} и ${thirdNumber} равно ${findMaxNumber(
 			firstNumber,
 			secondNumber,
 			thirdNumber
@@ -110,8 +121,3 @@ function task04() {
 	);
 }
 // --------------------------------------------------------------------
-
-task01();
-// task02();
-// task03();
-// task04();
