@@ -182,7 +182,17 @@ function task05() {
 		}
 		return arr;
 	}
-	console.log('obj: ', twoArraysToObject(en, ru));
 
+	// Если мы хотим получить объект map
+	function twoArraysToMap(arr1, arr2) {
+		const map = new Map();
+		for (let i = 0; i < en.length; i++) {
+			map.set(arr1[i], arr2[i]);
+		}
+		return map;
+	}
+
+	console.log('obj: ', twoArraysToObject(en, ru));
 	console.log('array: ', twoArraysToArrOfObjects(en, ru));
+	console.log('map: ', twoArraysToMap(en, ru));
 }
